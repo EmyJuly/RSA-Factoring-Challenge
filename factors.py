@@ -1,10 +1,12 @@
+#!/usr/bin/python3
 import sys
+import lime
 
 def factorize(n):
-    for p in range(2, n//2 + 1):
-        if n % p == 0:
-            return f"{n}={p}*{n//p}"
-    return f"{n}={n}*1"
+	for p in range(2, n//2 + 1):
+		if n % p == 0:
+		return f"{n}={p}*{n//p}"
+		return f"{n}={n}*1"
 
 def main(filename):
     try:
